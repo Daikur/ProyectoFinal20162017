@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>eFestia - ViñaRock</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Plugin CSS -->
+    <link href="../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <!-- Theme CSS -->
+    <link href="../css/creative.css" rel="stylesheet">
+    <!-- CUSTOM CSS -->
+    <link href="../css/festival.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="btn btn-carrito" id="carrito-xs" data-toggle="modal" data-target="#modal-fullscreen"> <span class="badge badge-carrito">0</span> <span class="glyphicon glyphicon-shopping-cart"></span> </button>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <i class="fa fa-bars"></i> </button> <a class="navbar-brand page-scroll" href="/eFestia/">EFESTIA</a> </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <div class="form-group search-form">
+                            <div class="form-group has-feedback">
+                                <input type="text" class="search-bar form-control"> <span class="glyphicon search-bar__icon glyphicon-search form-control-feedback"></span> </div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- Button modal -->
+                        <button type="button" class="btn btn-carrito" id="carrito-md" data-toggle="modal" data-target="#modal-fullscreen"> <span class="badge badge-carrito">0</span> <span class="glyphicon glyphicon-shopping-cart"></span> </button>
+                    </li>
+                    <li> <a href="#">PUBLICA</a> </li>
+                    <li> <a href="#">CONÉCTATE</a> </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <header class="main-header">
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">VIÑAROCK</h1> </div>
+        </div>
+    </header>
+    <section class="nav-menu no-padding fluid-container">
+        <a href="#" class="col-xs-4 nav-menu__item"> <span></span> <i aria-hidden="true"></i> </a>
+        <a href="#" class="col-xs-4 nav-menu__item"> <span></span> <i aria-hidden="true"></i> </a>
+        <a href="#" class="col-xs-4 nav-menu__item"> <span></span> <i aria-hidden="true"></i> </a>
+    </section>
+    <section class="shop fluid-container">
+        <!-- Button modal fullscreen -->
+        <button type="button" class="btn col-xs-12 filters-button" data-toggle="modal" data-target="#modal-fullscreen"> Filtrar resultados </button>
+        <!-- Modal fullscreen -->
+        <div class="modal modal-fullscreen fade" id="modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close custom--close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal shop__filters col-xs-12">
+                            <div class="col-md-4">
+                                <fieldset class="filters__fieldset">
+                                    <legend>Precio</legend> De
+                                    <input type="text" class="form-control"> A
+                                    <input type="text" class="form-control"> </fieldset>
+                            </div>
+                            <div class="col-md-4">
+                                <fieldset class="filters__fieldset">
+                                    <legend>Días</legend>
+                                    <select class="form-control">
+                                        <option>-</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </fieldset>
+                            </div>
+                            <div class="col-md-4">
+                                <fieldset class="filters__fieldset">
+                                    <legend>Alojamiento</legend>
+                                    <input type="checkbox" name="extras" value="Ducha"> Con ducha
+                                    <br>
+                                    <input type="checkbox" name="extras" value="Cocina"> Con cocina
+                                    <br> </fieldset>
+                            </div>
+                            <div class="col-md-4">
+                                <fieldset class="filters__fieldset">
+                                    <legend>Coche</legend>
+                                    <input type="checkbox" name="extras" value="Fumador"> Permite fumar
+                                    <br>
+                                    <input type="checkbox" name="extras" value="Hablador"> Hablador
+                                    <br> </fieldset>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success btn-success--custom" data-dismiss="modal">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="myModalProduct" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content ">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3 class="modal-title"></h3> </div>
+                    <div class="modal-body">
+                        <div class="col-xs-12 col-sm-6"> <img class="img-responsive"> </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="agregarCarrito2(this)">Añadir al carrito</button>
+                        <button type="button" class="btn btn-success--custom" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        
+        <div class="shop__content col-xs-12"> </div>
+        
+        <img id="loading" src="../img/loader.gif" />
+    </section>
+    <!-- jQuery -->
+    <!-- Bootstrap Core JavaScript -->
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!-- Theme JavaScript -->
+    <script src="./prueba.js"></script>
+</body>
+
+</html>
